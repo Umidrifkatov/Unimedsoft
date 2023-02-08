@@ -157,7 +157,7 @@ class Patient(models.Model): # Пациенты
 # результаты и товары  Оплата 
   
 class Result(models.Model):
-    result_text = models.TextField(10000, verbose_name='Текст ответа')
+    result_text = models.TextField(max_length=10000, verbose_name='Текст ответа')
     addedby = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, verbose_name='Кем добавлен') # Кем добавлен
     time_added = models.DateTimeField(auto_now_add=True, null=True, verbose_name='Время загрузки')
 
