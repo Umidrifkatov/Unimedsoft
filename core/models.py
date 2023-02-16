@@ -22,11 +22,6 @@ roles = [
 
 
 
-
-
-
-
-
 class Specialization(models.Model):
     name = models.CharField(max_length=50, verbose_name='Название специальности')
     cabinet = models.IntegerField(default=0, null=True, verbose_name='Кабинет (можно оставить пустым)')
@@ -37,12 +32,6 @@ class Specialization(models.Model):
     class Meta:
         verbose_name = "Специальность"
         verbose_name_plural = "Специальности"
-
-
-
-
-
-
 
 
 
@@ -75,20 +64,6 @@ class User(models.Model): # Пользователи
     class Meta:
          verbose_name = "Сотрудник"
          verbose_name_plural = "Сотрудники"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -149,11 +124,6 @@ class Patient(models.Model): # Пациенты
 
 
 
-
-
-
-
-
 # результаты и товары  Оплата 
   
 class Result(models.Model):
@@ -196,9 +166,6 @@ class Payment(models.Model):
         verbose_name = "Транзакция оплаты"
         verbose_name_plural = "Транзакции оплаты"
     
-
-
-
 
 
 
